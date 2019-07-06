@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Dashboard Template · Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/dasboard.css" rel="stylesheet">
+ <link href="assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+ <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+ <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+ <link href="assets/css/mycss.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar  fixed-top  flex-md-nowrap p-0 shadow" id="mycolor">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" ><span style="color:white;">Camsu Manager</span></a>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link btn btn-danger" href="#" id="saly">
+        <i class="fas fa-power-off"></i></a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item  menu-hover">
+            <a class="nav-link   menu-hover" href="#">
+              <i class="fas fa-home"></i>
+              Page Accueil <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-user"></i>
+              Utilisateur
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-user-friends"></i>
+              Gestion des membres
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-layer-group"></i>
+              Gestion Seminaire
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-briefcase"></i>
+              Gestion Region
+            </a>
+          </li>
+          
+        </ul>
+
+        
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <!-- debut titre tableau de bord -->
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Enregistrement Nouveau Membre</h1>
+        
+        <div class="btn-toolbar mb-2 mb-md-0">
+             <div class="row colone-button">
+              <div class="col-md-3">
+           <button type="button" class="btn btn-success">
+            <i class="fas fa-user-plus"></i>
+             Membre
+          </button>
+        </div>
+         <div class="col-md-3">
+           <button type="button" class="btn btn-info">
+            <i class="fas fa-briefcase"></i>
+             Region
+          </button>
+        </div>
+         <div class="col-md-3">
+           <button type="button" class="btn btn-warning">
+            <i class="fas fa-layer-group"></i>
+             Seminaire
+          </button>
+        </div>
+         
+        </div>
+        </div>
+      </div>
+    <!-- Fin-->
+      <!-- contenue a ajouter-->
+      <form>
+  <div class="form-group">
+    <label for="inputAddress">Nom et Prenom</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Nom et prenom">
+  </div>
+   <div class="form-row">
+   <div class="form-group col-md-4">
+      <label for="inputState">Branche</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choisire</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Qualité</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Qualité">
+    </div>
+      <div class="form-group col-md-2">
+      <label for="inputState">Sexe</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choisire</option>
+        <option>...</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Etablissement</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Faculté ou ecole">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Email</label>
+      <input type="email" class="form-control" id="inputCity"  placeholder="email">
+    </div>
+    <div class="form-group col-md-4">
+      
+      <label for="inputCity">Contact</label>
+      <input type="number" class="form-control" id="inputCity"  placeholder="numero de telephone">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Annee adhesion</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+ </br>
+  <button type="submit" class="btn btn-primary">Enregistrer</button>
+    <button type="submit" class="btn btn-danger">Annulé</button>
+</form>
+<!-- Fin-->
+    </main>
+  </div>
+</div>
+</body>
+</html>
