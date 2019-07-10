@@ -6,11 +6,7 @@ $(document).ready(function() {
   $("#myclose,.close,#close-remove,#close-auth").click(()=> {
   $("#corp-filtre,#corp-delete,#corp-auth,#close-auth").addClass("d-none")
      })  
-//fonction pour le date picker
- $("#datepicker").datepicker({
-  uiLibrary: 'bootstrap4'
- })
-})
+    })
 //fonction afficher le modal
 const afficher = () => {
   $("#modal-filtre-membre").modal();

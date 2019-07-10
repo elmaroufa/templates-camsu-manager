@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Dashboard Template · Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/dasboard.css" rel="stylesheet">
+ <link href="assets/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+ <link href="assets/fontawesome/css/brands.css" rel="stylesheet">
+ <link href="assets/fontawesome/css/solid.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+ <link href="assets/css/mycss.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar  fixed-top  flex-md-nowrap p-0 shadow" id="mycolor">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" ><span style="color:white;">Camsu Manager</span></a>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link btn btn-danger" href="#" id="saly">
+        <i class="fas fa-power-off"></i></a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item  menu-hover">
+            <a class="nav-link   menu-hover" href="#">
+              <i class="fas fa-home"></i>
+              Page Accueil <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-user"></i>
+              Utilisateur
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-user-friends"></i>
+              Gestion des membres
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-layer-group"></i>
+              Gestion Seminaire
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-briefcase"></i>
+              Gestion Region
+            </a>
+          </li>
+          
+        </ul>
+
+        
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <!-- debut titre tableau de bord -->
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Gestion des regions</h1>
+        
+        <div class="btn-toolbar mb-6 mb-md-0">
+             <div class="row colone-button">
+              <div class="col-md-14">
+           <button type="button" class="btn btn-success" id="button-add-membre">
+           <i class="fas fa-plus"></i></br>
+             Ajouter Region
+          </button>
+        </div>
+         
+        </div>
+        </div>
+      </div>
+    <!-- Fin-->
+      <!-- contenue a ajouter-->
+      
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nom de la region</th>
+      <th scope="col">Ville de la region</th>
+      <th scope="col">Siege</th>
+      <th scope="col">President Regionnal</th>
+      <th scope="col">Option</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+     <td> <a href="">Region du Littoral</a></td>
+      <td>Douala</td>
+      <td>Universite de douala,mont des oliviers</td>
+       <td>Mohamadou Saabiou</td></a>
+        <td><button type="button" data-name_pr="Mohamadou Saabiou" data-name_br="Region du Littoral"
+          class="btn btn-info update_region" >modifier</button>
+        <button type="button" class="btn btn-danger supress-m" >suprimer </button></td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+     <td> <a href="">Region de l'extreme Nord</a></td>
+      <td>Maroua</td>
+      <td>Universite de la paix</td>
+       <td>Aboubakar Lamdo</td></a>
+        <td><button type="button" data-name_pr="Aboubakar Lamdo" data-name_br="Region de l'extreme Nord" class="btn btn-info update_region" >modifier</button>
+        <button type="button" class="btn btn-danger supress-m"  >suprimer </button></td>
+    </tr>
+  </tbody>
+</table>
+            
+          </div>
+        </div>
+      </div>
+<!-- Fin-->
+    </main>
+  </div>
+</div>
+<!--div modal  -->
+<div class="modal fade" id="modal-filtre-membre" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="titre-modal"></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="corp-add" class="d-none"> 
+          <form role="form" method="POST" action="" id="monform">
+            <div class="form-group col-md-13">
+              <label for="inputState">Nom Branche</label>
+              <input type="text" class="form-control" id="name_br">
+            </div>
+            <div class="form-group col-md-13">
+              <label for="inputState">Siege Branche</label>
+              <input type="text" class="form-control" id="siege">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">Ville localise</label>
+                <input type="text" class="form-control" id="vill_local">
+              </div>
+              
+              <div class="form-group col-md-6">
+                <label for="inputZip">Annee creation</label>
+                <input type="date" class="form-control" id="date_br">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">President Regionnal</label>
+                <input type="text" class="form-control" id="name_pr"  placeholder="email">
+              </div>
+              
+              <div class="form-group col-md-6">
+                <label for="inputZip">Nombre sous branche</label>
+                <input type="number" class="form-control" id="qt_br">
+              </div>
+            </div></br>
+            <div class="form-group">
+                <div>
+                    <button type="submit" class="btn btn-info btn-block">Enregistrer</button>
+                </div>
+            </div>
+        </form>
+        </div>
+        <div id="corp-delete" class="d-none">Vous le vous suprimer Mr Adamaou Garba</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="myclose" class="btn btn-danger" data-dismiss="modal">Annule</button>
+        <button type="button" id="close-remove" class="btn btn-danger d-none">suprimer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin modal-->
+
+<script src="assets/js/jquery.slim.min.js" ></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+<script src="assets/js/jsregion.js"></script>
+</body>
+</html>
