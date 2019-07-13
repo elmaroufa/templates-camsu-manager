@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Dashboard Template · Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/css/dasboard.css" rel="stylesheet">
+ <link href="assets/css/mycss.css" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/02a087eb57.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar  fixed-top  flex-md-nowrap p-0 shadow" id="mycolor">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#" ><span style="color:white;">Camsu Manager</span></a>
+  <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+  <ul class="navbar-nav px-3">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link btn btn-danger" href="#" id="saly">
+        <i class="fas fa-power-off"></i></a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item  menu-hover">
+            <a class="nav-link   menu-hover" href="#">
+              <i class="fas fa-home"></i>
+              Page Accueil <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-user"></i>
+              Utilisateur
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-user-friends"></i>
+              Gestion des membres
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-layer-group"></i>
+              Gestion Seminaire
+            </a>
+          </li>
+          <li class="nav-item menu-hover">
+            <a class="nav-link menu-hover" href="#">
+              <i class="fas fa-briefcase"></i>
+              Gestion Region
+            </a>
+          </li>
+          
+        </ul>
+
+        
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <!-- debut titre tableau de bord -->
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Enregistrement Nouveau Seminaire</h1>
+      </div>
+    <!-- Fin-->
+      <!-- contenue a ajouter-->
+      <form>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Theme du seminaire</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+   <div class="form-row">
+   <div class="form-group col-md-6">
+      <label for="inputState">Region hote</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choisire</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Site du seminaire</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Qualité">
+    </div>
+      
+  </div>  
+  <div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputState">Nom cour seminaire</label>
+    <input type="text" class="form-control" id="inputPassword4" placeholder="Qualité">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="inputPassword4">Periode deroulememnt du seminaire</label>
+    <input type="text" class="form-control" id="inputPassword4" placeholder="Qualité">
+  </div>
+</div>  
+ </br>
+  <button type="submit" class="btn btn-primary">Enregistrer</button>
+    <button type="submit" class="btn btn-danger">Annulé</button>
+</form>
+<!-- Fin-->
+    </main>
+  </div>
+</div>
+<script src="assets/js/jquery.slim.min.js" ></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.5.0/js/bootstrap4-toggle.min.js"></script>
+<script src="assets/js/myjs.js"></script>
+</body>
+</html>
